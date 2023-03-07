@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Murecho', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: fixed;
+    background-color: teal;
+    padding: 12px 20px;
+    z-index: 99;
+}
+
+.logo img {
+    width: 12%;
+    height: 12%;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 30px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: darkgrey;
+    text-align: center;
+    transition: all 0.5s;
+    position: relative;
+    padding: 2px;
+}
+
+.menu li a:hover {
+    background-color: lime;
+    color: rgb(56, 55, 59);
+    transition: all 0.5s;
+}
+
+.open-menu , .close-menu {
+    position: absolute;
+    color: rgb(56, 55, 59);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 30px;
+    right: 40px;
+}
+
+#check {
+    display: none;
+}
+/* End Navbar */
+
+/* Slider */
+#banner {
+    display: flex;
+    justify-content: center;
+}
+
+.pic-slider {
+    margin-top: 55px;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    top: 250px;
+    left: 5px;
+    font-size: 21px;
+    color: rgb(9, 139, 96);
+}
+
+.pic-slider img {
+    width: 1366px;
+    height: 570px;
+}
+/* End Slider */
+
+/* Our Packages */
+#packages {
+    width: 100%;
+}
+
+.heading {
+    font-size: 2rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+#packages p {
+    text-align: center;
+    margin: 1rem;
+}
+
+.packages-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+
+.packages-item {
+    width: 20rem;
+    margin: 1rem;
+    padding: 10px;
+    display: flex;
+    flex-shrink: 1;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.1s linear;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px 0px rgb(0, 0, 0, 0.1);
+}
+
+.packages-item:hover {
+    transform: scale(1.01);
+    box-shadow: 5px 5px 10px 0px rgb(0, 0, 0, 0.2);
+}
+
+.packages-item ul li {
+    width: 50px;
+    height: 50px;
+    color: white;
+    list-style: none;
+    font-size: 1.2rem;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #00e68e;
+}
+
+.packages-heading {
+    margin: 1rem 0;
+    text-align: center;
+    color: #000000b7;
+}
+
+article p {
+    font-size: 14px;
+    color: #000000b7;
+}
+
+.packages-item:hover p,
+.packages-item:hover .packages-heading {
+    color: #000000;
+}
+/* End Our Packages */
+
+/* Form */
+.title-form {
+    display: flex;
+    align-content: center;
+}
+
+.title-form h1 {
+    padding-left: 150px;
+    margin-bottom: 80px;
+}
+
+.title-form p {
+    position: relative;
+    right: 135px;
+    top: 70px;
+}
+
+.form-input {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 150px;
+  }
+  
+  .form-label {
+    width: 120px;
+  }
+  
+  .form-point {
+    width: 10px;
+  }
+  
+  .form-type {
+    width: 50px;
+  }
+  
+  .input {
+    width: 300px;
+  }
+  
+  .button {
+    width: 430px;
+    margin-left: 150px;
+    margin-top: 10px;
+  }
+
+  .form-output {
+    margin-left: 60%;
+    position: relative;
+    bottom: 30%;
+  }
+/* End Form */
+
+/* Footer */
+.footer-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 95px;
+    background-color: lightseagreen;
+    height: 55px;
+}
+
+.footer-down p {
+    padding-top: 4px;
+    padding-left: 980px;
+}
+
+.footer-down img {
+    width: 6%;
+    height: 6%;
+    position: absolute;
+    right: 3%;
+    margin-top: 5px;
+}
+/* End Footer */
+
+@media screen and (max-width: 490px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        top: 5px;
+        right: -100%;
+        z-index: 100;
+        background-color: teal;
+        transition: all 0.5s;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding-top: 10px;
+    }
+
+    .open-menu , .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
+
+    .pic-slider img {
+        width: 610px;
+        height: 289px;
+    }
+
+    .title {
+        position: relative;
+        top: 160px;
+    }
+
+    .form-output {
+        position: relative;
+        top: 40px;
+        right: 35%;
+    }
+
+    .footer-down {
+        height: 50px;
+    }
+
+    .footer-down p {
+        position: relative;
+        right: 80%;
+    }
+
+    .footer-down img {
+        position: absolute;
+        right: 35%;
+    }
+}

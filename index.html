@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agent</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Murecho&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css' integrity='sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==' crossorigin='anonymous'/>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="logo"><a href="#"><img src="assets/Logo.png"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#packages">Our Packages</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Navbar -->
+
+    <!-- Slider -->
+    <section id="banner">
+        <div class="pic-slider">
+            <h3 class="title">Hi <span id="name"></span>, welcome to Holiday!!</h3>
+            <img src="assets/1.png" class="slideshow">
+        </div>
+    </section>
+    <!-- End Slider -->
+
+    <!-- Our Packages -->
+    <section id="packages">
+        <h1 class="heading">Our Packages</h1>
+        <p>Kita menyedia paket sesuai kebutuhan sebagai berikut:</p>
+        <!-- Packages Item Starts Here -->
+        <div class="packages-container">
+            <div class="packages-item">
+                <ul>
+                    <li><i class="fa-solid fa-car"></i></li>
+                </ul>
+                <article>
+                    <h2 class="packages-heading">Pick-up Guests</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum harum possimus saepe provident ex nulla reiciendis illo minima?</p>
+                </article>
+            </div>
+            <div class="packages-item">
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i></li>
+                </ul>
+                <article>
+                    <h2 class="packages-heading">Destination</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima explicabo temporibus qui atque nobis, sint dolorum recusandae aperiam.</p>
+                </article>
+            </div>
+        </div>
+        <!-- Packages Item Ends Here -->
+    </section>
+
+    <!-- Form -->
+    <div class="title-form">
+        <h1>Feedback</h1>
+        <p>Silahkan feedback pada form dibawah ini!</p>
+    </div>
+    <form name="message-form" onsubmit="return validateForm()">
+        <div class="form-input">
+          <!-- Nama -->
+          <div class="form-label">
+            <label for="name">Nama</label>
+          </div>
+          <div class="form-point">:</div>
+          <div class="form-type">
+            <input type="text" id="name" class="input" placeholder="Nama" name="full-name"/>
+          </div>
+        </div>
+        <!-- Tgl Lahir -->
+        <div class="form-input">
+          <div class="form-label">
+            <label for="birthday">Tanggal Lahir</label>
+          </div>
+          <div class="form-point">:</div>
+          <div class="form-type">
+            <input type="date" id="birthday" class="input" name="birthday" />
+          </div>
+        </div>
+        <!-- Jenis Kelamin -->
+        <div class="form-input">
+          <div class="form-label">
+            <label for="gender">Jenis Kelamin</label>
+          </div>
+          <div class="form-point">:</div>
+          <div class="form-radio">
+            <input type="radio" id="laki-laki" name="gender" value="Male" />
+            <label for="laki-laki">Laki-Laki</label>
+            <input type="radio" id="perempuan" name="gender" value="Female" />
+            <label for="perempuan">Perempuan</label>
+          </div>
+        </div>
+        <!-- Pesan -->
+        <div class="form-input">
+          <div class="form-label">
+            <label for="message">Pesan</label>
+          </div>
+          <div class="form-point">:</div>
+          <textarea name="messages" id="" cols="40" rows="4"></textarea>
+        </div>
+        <input type="submit" value="Submit" class="button" />
+      </form>
+
+      <div class="form-output">
+        <p>Nama: <span id="sender-full-name"></span></p>
+        <br />
+        <p>Tanggal Lahir: <span id="sender-birthday"></span></p>
+        <br />
+        <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+        <br />
+        <p>Pesan: <span id="sender-messages"></span></p>
+      </div>
+      <!-- End Form -->
+
+      <!-- Footer -->
+    <footer class="footer-down">
+        <p>Created by Feby</p>
+        <img src="assets/logo RevoU.svg">
+    </footer>
+    <!-- End Footer -->
+
+      <script src="app.js"></script>
+</body>
+</html>
