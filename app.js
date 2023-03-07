@@ -25,18 +25,16 @@ function nextImage() {
 }
 
 // Menjalankan Fungsi untuk Replace Gambar setiap 3 detik
-setInterval(nextImage, 1000);
+setInterval(nextImage, 2000);
 
 // Fungsi untuk muncul notifikasi setelah mengisi Form
 function validateForm() {
     var name = document.forms['message-form']['full-name'].value;
-    var date = document.forms['message-form']['birthday'].value;
-    var gender = document.forms['message-form']['gender'].value;
+    var date = document.forms['message-form']['email'].value;
     var messages =document.forms['message-form']['messages'].value;
 
     document.getElementById('sender-full-name').innerText = name;
-    document.getElementById('sender-birthday').innerText = date;
-    document.getElementById('sender-gender').innerText = gender;
+    document.getElementById('sender-email').innerText = date;
     document.getElementById('sender-messages').innerText = messages;
     return false;
 }

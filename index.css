@@ -66,13 +66,13 @@ body {
 
 .open-menu {
     top: 50%;
-    right: 40px;
+    right: 20px;
     transform: translateY(-50%);
 }
 
 .close-menu {
-    top: 30px;
-    right: 40px;
+    top: 16px;
+    right: 30px;
 }
 
 #check {
@@ -96,7 +96,7 @@ body {
     top: 250px;
     left: 5px;
     font-size: 21px;
-    color: rgb(9, 139, 96);
+    color: #fffc6a;
 }
 
 .pic-slider img {
@@ -193,8 +193,10 @@ article p {
 
 .title-form p {
     position: relative;
-    right: 135px;
+    right: 105px;
     top: 70px;
+    display: flex;
+    justify-content: center;
 }
 
 .form-input {
@@ -221,7 +223,7 @@ article p {
   }
   
   .button {
-    width: 430px;
+    width: 428px;
     margin-left: 150px;
     margin-top: 10px;
   }
@@ -245,7 +247,7 @@ article p {
 
 .footer-down p {
     padding-top: 4px;
-    padding-left: 980px;
+    padding-left: 840px;
 }
 
 .footer-down img {
@@ -257,12 +259,12 @@ article p {
 }
 /* End Footer */
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 435px) {
     .menu {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 70%;
+        width: 80%;
         height: 100vh;
         position: fixed;
         top: 5px;
@@ -287,15 +289,36 @@ article p {
     #check:checked ~ .menu {
         right: 0;
     }
+    
+    .pic-slider {
+        margin-top: 46px;
+    }
 
     .pic-slider img {
-        width: 610px;
+        width: 435px;
         height: 289px;
     }
 
     .title {
         position: relative;
         top: 160px;
+    }
+    
+    .title-form h1 {
+        margin-right: -30px;
+    }
+    
+    .form-input {
+        margin-left: 60px;
+    }
+    
+    .form-label {
+        width: 60px;
+    }
+    
+    .button {
+        width: 303px;
+        margin-left: 129px;
     }
 
     .form-output {
@@ -310,11 +333,13 @@ article p {
 
     .footer-down p {
         position: relative;
-        right: 80%;
+        right: 103%;
     }
 
     .footer-down img {
         position: absolute;
-        right: 35%;
+        right: 36%;
+        width: 9%;
+        height: 9%;
     }
 }
