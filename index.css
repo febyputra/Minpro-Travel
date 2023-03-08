@@ -207,7 +207,7 @@ article p {
   }
   
   .form-label {
-    width: 120px;
+    width: 150px;
   }
   
   .form-point {
@@ -228,10 +228,14 @@ article p {
   }
 
   .button {
-    width: 15%;
+    width: 10%;
     position: absolute;
-    left: 20%;
+    left: 25%;
     margin-top: 70px;
+    background-color: teal;
+    color: #fff;
+    cursor: pointer;
+    border: none;
   }
 
   .form-output {
