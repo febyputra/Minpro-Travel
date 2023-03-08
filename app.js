@@ -1,3 +1,7 @@
+// Mengambil Inputan Nama dari User
+var name = prompt("Enter Your Name!");
+document.getElementById("name").innerText = name;
+
 // Mengambil Elemen Gambar dan Tombol
 var img = document.querySelector('.slideshow');
 
@@ -30,11 +34,11 @@ setInterval(nextImage, 2000);
 // Fungsi untuk muncul notifikasi setelah mengisi Form
 function validateForm() {
     var name = document.forms['message-form']['full-name'].value;
-    var date = document.forms['message-form']['email'].value;
-    var messages =document.forms['message-form']['messages'].value;
+    var email = document.forms['message-form']['email'].value;
+    var packages = document.forms['message-form']['packages'].value;
 
     document.getElementById('sender-full-name').innerText = name;
-    document.getElementById('sender-email').innerText = date;
-    document.getElementById('sender-messages').innerText = messages;
+    document.getElementById('sender-email').innerText = email;
+    document.getElementById('sender-packages').innerText = packages;
     return false;
 }

@@ -39,9 +39,9 @@
     <!-- End Slider -->
 
     <!-- Our Packages -->
-    <section id="packages">
+    <section id="packages-menu">
         <h1 class="heading">Our Packages</h1>
-        <p>Kita menyedia paket sesuai kebutuhan sebagai berikut:</p>
+        <p>We offer the following customised packages:</p>
         <!-- Packages Item Starts Here -->
         <div class="packages-container">
             <div class="packages-item">
@@ -68,8 +68,8 @@
 
     <!-- Form -->
     <div class="title-form">
-        <h1>Feedback</h1>
-        <p>Silahkan feedback pada form dibawah ini!</p>
+        <h1>Contact Us</h1>
+        <p>Sales will contact you within 24 hours after we receive your data.</p>
     </div>
     <form name="message-form" onsubmit="return validateForm()">
         <div class="form-input">
@@ -82,7 +82,7 @@
             <input type="text" id="name" class="input" placeholder="Nama" name="full-name"/>
           </div>
         </div>
-        <!-- Tgl Lahir -->
+        <!-- Email -->
         <div class="form-input">
           <div class="form-label">
             <label for="email">Email</label>
@@ -92,15 +92,18 @@
             <input type="email" id="email" class="input" name="email" />
           </div>
         </div>
-        <!-- Pesan -->
+        <!-- List Box -->
         <div class="form-input">
           <div class="form-label">
-            <label for="message">Pesan</label>
+            <label for="">What are you interested in?</label>
           </div>
           <div class="form-point">:</div>
-          <textarea name="messages" id="" cols="37" rows="4"></textarea>
-        </div>
-        <input type="submit" value="Submit" class="button" />
+          <select name="packages" id="packages" class="packages-box">
+            <option value="">Select Option</option>
+            <option value="pick-up">Pick-up Guests</option>
+            <option value="destination">Destination</option>
+          </select>
+        <input type="submit" value="Send" class="button" />
       </form>
 
       <div class="form-output">
@@ -108,7 +111,7 @@
         <br />
         <p>Email: <span id="sender-email"></span></p>
         <br />
-        <p>Pesan: <span id="sender-messages"></span></p>
+        <p>Pesan: <span id="sender-packages"></span></p>
       </div>
       <!-- End Form -->
 
