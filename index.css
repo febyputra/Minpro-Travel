@@ -318,7 +318,14 @@ article p {
     }
     
     .title-form h1 {
-        margin-right: -30px;
+        margin-right: -40px;
+        width: 10%;
+    }
+    
+    .title-form p {
+        padding-top: 35px;
+        position: relative;
+        right: 50px;
     }
     
     .form-input {
@@ -330,29 +337,31 @@ article p {
     }
     
     .button {
-        width: 303px;
+        width: 103px;
         margin-left: 129px;
+        margin-top: 110px;
     }
 
     .form-output {
         position: relative;
-        top: 40px;
-        right: 35%;
+        top: 170px;
+        right: 85%;
     }
 
     .footer-down {
         height: 50px;
+        margin-top: 370px;
     }
 
     .footer-down p {
         position: relative;
-        right: 103%;
+        right: 112%;
     }
 
     .footer-down img {
         position: absolute;
-        right: 36%;
-        width: 9%;
-        height: 9%;
+        right: 16%;
+        width: 50%;
+        height: 50%;
     }
 }
